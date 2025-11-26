@@ -1,0 +1,32 @@
+networks:
+  cloudflared_proxy:
+    external: true
+    
+services:
+  readme-stats:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: github-readme-stats
+    restart: unless-stopped
+    
+    environment:
+      # GitHub personal access token (Classic)
+      # Permissions: repo (all), read:user, user:email
+      - PAT_1=${PAT_1} 
+      # Cache duration for statistics in seconds
+      - CACHE_SECONDS=${CACHE_SECONDS}
+    
+    # ports:
+    #   - "9000:9000"
+
+    # Resource limits
+    deploy:
+      resources:
+        limits:
+          memory: 200m  # max 200MB of RAM
+          cpus: 0.5     # max 50% of a CPU
+          pids: 50      # max 50 processes
+
+    networks:
+      - cloudflared_proxy

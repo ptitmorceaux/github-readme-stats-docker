@@ -1,0 +1,12 @@
+# Ignore the Git repository files
+**/.git
+
+# Ignore local node_modules in the github-readme-stats folder
+**/node_modules
+
+# Ignore the Docker files themselves
+Dockerfile
+docker-compose.yml
+
+# Ignore the environment file containing sensitive variables
+.env
