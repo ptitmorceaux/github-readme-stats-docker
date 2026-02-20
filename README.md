@@ -1,9 +1,9 @@
 # GitHub Readme Stats - Self-Hosted
 
 <p align="center">
-  <strong>🐳 Auto-hébergement Docker de <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a></strong>
+  <strong>🐳 Auto-hébergement Docker du projet
   <br>
-  Projet original par <a href="https://github.com/anuraghazra">@anuraghazra</a>
+  <a href="https://github.com/anuraghazra/github-readme-stats">github-readme-stats</a></strong>, de <a href="https://github.com/anuraghazra">@anuraghazra</a>
 </p>
 
 <p align="center">
